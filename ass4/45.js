@@ -1,9 +1,14 @@
+// here we're sorting an array of 0s, 1s and 2s.
+// we'll just keep count of all the zeros, ones and twos
+// in individual variables and then build an array pushing
+// 0s, then 1s, then 2s
+
 function sort012s(arr){
 	let zeros = 0;
 	let ones = 0;
 	let twos = 0;
 	let ret = []
-	for(a of arr){
+	for(let a of arr){
 		if(a === 0) zeros++;
 		else if( a === 1) ones++;
 		else if( a === 2) twos++;
@@ -22,3 +27,5 @@ function sort012s(arr){
 	}
 
 }
+// this runs in linear time, as we basicallyjust count as we iterate.
+// this takes linear space in the array we create

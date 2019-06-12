@@ -15,3 +15,4 @@ function MaxContiguousSum(arr){
 	}
 	return max;
 }
+// this will take up constant space and run in O(n) time

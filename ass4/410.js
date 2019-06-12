@@ -15,7 +15,7 @@ function elementsByFrequency(arr){
 		else
 			++countMap[arr[i]];
 	}
-	// here, we have a map of all the counts, 
+	// At this point, we have a map of all the counts, 
 	// as well as a map of the first appearances.
 	// next we want to create an array of objects, 
 	// each with element, count, and first properties
@@ -39,7 +39,7 @@ function elementsByFrequency(arr){
 	return arr;
 }
 
-
+//this function just compares the 2
 function compare(a,b){
 	let countA = a.count;
 	let countB = b.count;
@@ -48,3 +48,4 @@ function compare(a,b){
 	}
 	return countB - countA;
 }
+// This should take linear time and linear space

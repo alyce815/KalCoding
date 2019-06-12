@@ -1,6 +1,10 @@
-//plan keep track of maximums in the array scanning from right to left
+/* 
+leaders are elements where all elements to the right 
+are smaller. to find all the leaders, we can list the maximums 
+we find in the array scanning from right to left.
+*/
 function printLeaders(arr){
-	last = arr.length-1;
+	last = arr.length-1; // get the last index
 	let max;
 	let ret = []
 	for(let i = last; i >= 0; i++){
@@ -12,3 +16,5 @@ function printLeaders(arr){
 	console.log(ret);
 
 }
+// this runs in linear time, we iterate backwards
+// over the array

@@ -1,3 +1,7 @@
+/*
+we're printing a 2d array in spiral form. we'll do this by keeping
+i and j coordinates and move it around the array
+*/
 function spiralPrint(arr){
 	let cols = arr.length;
 	let rows = arr[0].length;
@@ -20,3 +24,4 @@ function spiralPrint(arr){
 				console.log(arr[i][j++] + " ");
 	}
 }
+// this will take linear time. and constant space.

@@ -22,3 +22,6 @@ function missingInteger(arr){
 		}
 	}
 }
+
+// This will run in n-time twice, so O(n)
+// the hashmap will take up O(n) space

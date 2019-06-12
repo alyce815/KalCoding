@@ -1,3 +1,10 @@
+/* to find a particular sum in a subarray we'll iterate through
+the array with two pointers and keep a running sum,
+when we move the left pointer, we'll subtract the preceding
+element, and when we move the right pointer, we'll add the 
+next element
+*/
+
 function sumSubarray(arr, targetSum){
 	let runningSum = arr[0];
 	let len = array.length;
@@ -21,6 +28,6 @@ function sumSubarray(arr, targetSum){
 	console.log("target sum not found");
 	return false;
 	}
-
-
 }
+
+// this will take O(n) or linear time with O(1) or constant space
