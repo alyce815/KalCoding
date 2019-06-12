@@ -1,14 +1,18 @@
 /*
-You are given a list of n-1 integers and these integers are in
-the range of 1 to n. There are no duplicates in list. One of 
-the integers is missing in the list. Write an efficient code 
-to find the missing integer.
-input ex: 1 2 3 4 5 7 8 9
-plan:hash all the elements and then search for numbers 1 through n
+Given a list of n - 1 integers, with no duplicates.
+and one number missing between 1 and n. find the missing number
+
+ex:
+with an input of: [1, 3]
+we should return: 2
+
+Our plan is to put all the array elements in a hash
+then search for numbers 1 through n in the hash
+if it's not found in the hash keys, we return it.
 */
 
 function missingInteger(arr){
-	elements = {}
+	let elements = {};
 	for(let i = 0;i < arr.length; i++){
 		elements[arr[i]] = i;
 	}

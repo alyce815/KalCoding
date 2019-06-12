@@ -1,19 +1,17 @@
-function MaxContiguousArraySum(arr){
-	
-	let maxSum = 0;
-	let potentialMax = 0;
-	for (a of arr){
-		potentialMax = potentialMax + a
-		if(potentialMax < 0)
-			potentialMax = 0;
-		else if (potentialMax > maxSum)
-			maxSum = potentialMax;
-	}
-	return maxSum;
-}
 
 /*
-	look for the positive subarrays. track the max sum over only 
-	the positive segments (using potential max)
-	return the largest sum we have compiled by the end of the array
+	The max sum will be found only over
+	the positive segments so we'll iterate the array
+	and save positive sums along the way
+	return the maximum by the end of the array
 */
+
+function MaxContiguousSum(arr){
+	let max = 0;
+	let positiveSum = 0;
+	for (let a of arr){
+		positiveSumsum = max(0, positiveSum+a);
+		max = max(sum,max);
+	}
+	return max;
+}
