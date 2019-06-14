@@ -13,4 +13,6 @@ let s1 = "alyce";
 let s2 = "cealy";
 let s3 = "yceal";
 console.log(isRotated(s1, s2),isRotated(s1,s3),isRotated(s2,s3)); 
-//third should be false
+// third test should be false
+// this algorithm runs in constant time and space - 
+// just looking at reorganized substrings of the input

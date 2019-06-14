@@ -8,3 +8,5 @@ function atoi(string){
 }
 
 console.log(atoi('999'));
+// atoi takes O(n) time where n is the length of the string
+// it takes constant space

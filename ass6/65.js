@@ -1,4 +1,4 @@
-// dynamic programming problem lets us solve in O(m*n) time
+// dynamic programming solution lets us solve in O(m*n) time
 // with m and n as the length of the two strings.
 
 
@@ -20,4 +20,5 @@ function longestCommonSubstring(x, y){
 		}
 	}
 	return longestSubstringLength;
-}
+}// this runs in O(m*n) time where m and n are the length of the
+// two strings. constant space requirements

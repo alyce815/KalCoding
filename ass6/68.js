@@ -20,3 +20,5 @@ function strstr(s, x){
 }
 
 console.log(strstr(s,x));
+// strstr takes O(m*n) time where m and n are
+// the length of s and x

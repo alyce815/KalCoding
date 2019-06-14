@@ -46,4 +46,4 @@ var longestPalindromicSubstring = (str) => {
 		ssl++;
 	}
 	return str.substring(start, start + maxLength);
-}
+}// this takes O(n^2) time and space

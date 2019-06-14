@@ -1,4 +1,4 @@
-// plan, start at index 0, remove duplicates-
+// plan, start at index 0, remove adjacent duplicates-
 // recurse on the str from index + 1, end
 // check that the new string doesn't have new duplicates
 // e.g. "xoox" => ""
@@ -38,4 +38,4 @@ function remove(str, removed=0){
 }
 
 console.log(remove('xdxoooxd')); // x at index 0 should remain
-
+// this should run in linear time, and space complexity

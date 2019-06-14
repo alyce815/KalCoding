@@ -1,4 +1,6 @@
-var input = ["flower","flow","sght"];
+// we're finding the longest common prefix in array of strings
+
+var input = ["flower","flow","floss"];
 
 var longestCommonPrefix = function(strs) {
     let lcp = '';
@@ -13,3 +15,5 @@ var longestCommonPrefix = function(strs) {
 };
 
 console.log(longestCommonPrefix(input));
+
+// this will take worst case O(n^2) time and constant space

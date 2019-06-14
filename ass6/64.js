@@ -54,3 +54,5 @@ function integerValue(romanCharacter){
 
 let r = 'MLXXX'; //1080
 console.log(romanToDecimal(r));
+
+// this runs in linear time and space complexity

@@ -1,3 +1,7 @@
+/*
+we're building a stack class that keeps track of the minimum value
+we'll do this by keeping track of where in the stack the minimum is.
+*/
 class minStack{
 	constructor(arr=[]){
 		this.vals = arr;
@@ -18,6 +22,7 @@ class minStack{
 		}
 		self.vals.push(value);
 	}
+	
 	pop(){
 		if (this.vals.length === 0) return null;
 		this.mindex = this.mindeces.pop();

@@ -1,3 +1,8 @@
+// to build a URL shortener, we'll map and encode 
+// ids in alphanumeric characters a-Z and 0-9 which shortens 
+// the length of the id
+// we can simply store full urls in a hash with the id as a key
+
 function idToShortURL(n){
 	let map = "abcdefghijklmnopqrstuvwxyz0123456789";
 	let shortURL;
@@ -25,3 +30,5 @@ function shortURLtoID(shortURL){
 	}
 
 }
+
+//conversion takes linear time with constant space.

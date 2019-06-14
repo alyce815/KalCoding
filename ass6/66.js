@@ -43,3 +43,4 @@ function longestUniqueSubstring(string){
 	return longestUnique;
 
 }
+// this runs in linear time and constant space
